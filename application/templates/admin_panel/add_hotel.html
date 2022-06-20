@@ -1,0 +1,47 @@
+{% extends "admin_panel/admin_master_layout.html" %}
+
+{% block title %} Add Hotel {% endblock %}
+
+{% block body %}
+<div class="Add-Hotel-background">
+    <form class="Add-Hotel-form" method="post" action="{{url_for('AdminView:add_hotel')}}">
+        <h1 class="Add-Hotel-form-header">Add Hotel</h1>
+        <select id="AddHotelCityName" name="city_name" class="classic">
+        <option>Select City</option>
+        <option value="Amsterdam" label="Amsterdam">Amsterdam</option>
+        <option value="Athens" label="Athens">Athens</option>
+        <option value="Berlin" label="Berlin">Berlin</option>
+        <option value="Madrid" label="Madrid">Madrid</option>
+        <option value="Vienna" label="Vienna">Vienna</option>
+        <option value="Paris" label="Paris">Paris</option>
+        <option value="Edinburgh" label="Edinburgh">Edinburgh</option>
+        <option value="Rome" label="Rome">Rome</option>
+        <option value="London" label="London">London</option>
+        <option value="Milan" label="Milan">Milan</option>
+        <option value="Geneva" label="Geneva">Geneva</option>
+        <option value="Sofia" label="Sofia">Sofia</option>
+        <option value="Dubai" label="Dubai">Dubai</option>
+        <option value="Islamabad" label="Islamabad">Islamabad</option>
+        <option value="Mumbai" label="Mumbai">Mumbai</option>
+        <option value="Kathmandu" label="Kathmandu">Kathmandu</option>
+        <option value="Hanoi" label="Hanoi">Hanoi</option>
+        <option value="Doha" label="Doha">Doha</option>
+        <option value="Budapest" label="Budapest">Budapest</option>
+        <option value="Brussels" label="Brussels">Brussels</option>
+        <option value="Prague" label="Prague">Prague</option>
+        <option value="Copenhagen" label="Copenhagen">Prague</option>
+        <option value="Helsinki" label="Helsinki">Helsinki</option>
+        <option value="Stockolm" label="Stockolm">Stockolm</option>
+          </select>
+    
+          <input class="Hotel-Name-Input" name="hotel_name" type="text" placeholder="Hotel Name"/>
+          <input id="HotelRoomsCapicity" class="Rooms-Capicity-Input" name="rooms_capicity" type="text" placeholder="Rooms Capicity"/>
+          <input id="HotelOffPeakSeasonRate"  class="Rooms-Capicity-Input" name="off_peak_season_room_price" type="text" placeholder="Off-peak season room price"/>
+          <input id="HotelPeakSeasonRate" class="Rooms-Capicity-Input" name="peak_seasons_room_price" type="text" placeholder="Peak season room price"/>
+    
+    
+        <button name="" class="Add-button">Add</button>
+        
+    </form>
+    </div>
+{% endblock %}  

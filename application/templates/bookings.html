@@ -1,0 +1,26 @@
+{% extends "master_layout.html" %}
+
+{% block title %} home {% endblock %}
+
+{% block body %}
+<div class="booking-card-background">
+{% for booking in bookings %}
+<form class="booking-card" method="post" action="{{url_for('HomeView:cancel_booking', id=booking.id)}}">
+    <h2 class="booked-hotel-name">{{booking.hotel_name}}</h2>
+    <div class="booking-info">
+        <h3 class="bookedby-name">Booked by: {{booking.booked_by}}</h3>
+        <h3 class="booking-id">Booking Id: {{booking.booking_id}}</h3>
+        <h3 class="hotel-city-name">City: {{booking.city_name}}</h3>
+        <a href="{{url_for('HomeView:receipt', id=booking.id)}}" class="get-receipt-button">Receipt</a>
+    </div>
+    <div class="booking-info" id="second-booking-info">
+        <h3 class="bookedby-name">Room Price: {{booking.room_price}} {{booking.currency}}</h3>
+        <h3 class="booking-id">Advance Time: {{booking.advance_booking_time}} days</h3>
+        <h3 class="hotel-city-name">Booking Date: {{booking.booking_date}}</h3>
+        <button name="" class="cancel-booking-button">Cancel</button>
+    </div>
+</form>
+{% endfor %}
+</div>
+{% endblock %}    
+

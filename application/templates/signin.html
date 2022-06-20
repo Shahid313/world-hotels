@@ -1,0 +1,15 @@
+{% extends "auth_master_layout.html" %}
+
+{% block title %} signin {% endblock %}
+
+{% block body %}
+<div class="sign-in-background">
+    <form class="sign-in-form" method="post" action="{{url_for('UserView:login')}}">
+        <h1 class="sign-in-form-header">Sign in</h1>
+        <input class="sign-in-form-inputs" name="email" type="text" placeholder="Email"/>
+        <input class="sign-in-form-inputs" name="password" type="password" placeholder="Password"/>
+        <button class="sign-in-button">Sign in</button>
+        <p class="dont-have-an-account-text">Don't have an account? <a class="sign-up-page-link" href="{{url_for('UserView:signup')}}">Sign up</a></p>
+    </form>
+    </div>
+{% endblock %}   

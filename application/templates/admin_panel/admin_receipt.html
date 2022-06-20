@@ -1,0 +1,10 @@
+{% extends "admin_panel/admin_master_layout.html" %}
+
+{% block title %} Add Hotel {% endblock %}
+
+{% block body %}
+<div class="Receipt-background">
+    <h1 class="booking-form-header" style="color: white;">Please Download The Receipt</h1>
+    <embed src="{{url_for('static', filename='receipts/')}}{{my_receipt[5]+'.pdf'}}" width="600px" height="500px" ></embed>
+</div>
+{% endblock %}  

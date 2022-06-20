@@ -1,0 +1,10 @@
+{% extends "master_layout.html" %}
+
+{% block title %} booking {% endblock %}
+
+{% block body %}
+<div class="Receipt-background">
+    <h1 class="booking-form-header" style="color: white;">Please Download Your Receipt</h1>
+    <embed src="{{url_for('static', filename='receipts/')}}{{my_receipt[5]+'.pdf'}}" width="600px" height="500px" ></embed>
+</div>
+{% endblock %} 

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>{% block title %} {% endblock %}</title>
+        <link href="{{ url_for('static', filename='css/make_booking.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ url_for('static', filename='css/bookings.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ url_for('static', filename='css/check.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ url_for('static', filename='css/navbar.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ url_for('static', filename='css/flash.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ url_for('static', filename='css/header.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ url_for('static', filename='css/card.css') }}" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body style="background-color: #a6b5c2;">
+        
+        <div class="nav-bar">
+            <ul class="nav-links">
+                <li><a class="link1" href="{{url_for('HomeView:home')}}">Home</a></li>
+                
+                <li><a class="link" href="{{url_for('HomeView:make_booking')}}">Book</a></li>
+                <li><a class="link" href="{{url_for('HomeView:bookings')}}">Bookings</a></li>
+                <li><a class="link" href="{{url_for('UserView:logout')}}">Logout</a></li>
+            </ul>
+        </div>
+        <div class="flash-background">
+        {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class="flashes">
+    {% for message in messages %}
+      <li class="message">{{ message }}</li>
+      <p class="cancel" style="color: #a6b5c2;font-size: 24px; cursor: pointer;">x</p>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+</div>
+        {% block body %}
+        {% endblock %}
+    
+        <script src="{{url_for('static', filename='js/main.js')}}"></script>
+        <script src="{{url_for('static', filename='js/message.js')}}"></script>     
+    </body>
+</html>

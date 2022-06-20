@@ -1,0 +1,85 @@
+{% extends "master_layout.html" %}
+
+{% block title %} booking {% endblock %}
+
+{% block body %}
+<div class="booking-background">
+<form class="booking-form" method="post" action="{{url_for('HomeView:make_booking')}}">
+    <h1 class="booking-form-header">Book A Room</h1>
+    <select name="city_name" id="CityName" class="classic">
+      <option>Select City</option>
+        <option value="Amsterdam" label="Amsterdam">Amsterdam</option>
+        <option value="Athens" label="Athens">Athens</option>
+        <option value="Berlin" label="Berlin">Berlin</option>
+        <option value="Madrid" label="Madrid">Madrid</option>
+        <option value="Vienna" label="Vienna">Vienna</option>
+        <option value="Paris" label="Paris">Paris</option>
+        <option value="Edinburgh" label="Edinburgh">Edinburgh</option>
+        <option value="Rome" label="Rome">Rome</option>
+        <option value="London" label="London">London</option>
+        <option value="Milan" label="Milan">Milan</option>
+        <option value="Geneva" label="Geneva">Geneva</option>
+        <option value="Sofia" label="Sofia">Sofia</option>
+        <option value="Dubai" label="Dubai">Dubai</option>
+        <option value="Islamabad" label="Islamabad">Islamabad</option>
+        <option value="Mumbai" label="Mumbai">Mumbai</option>
+        <option value="Kathmandu" label="Kathmandu">Kathmandu</option>
+        <option value="Hanoi" label="Hanoi">Hanoi</option>
+        <option value="Doha" label="Doha">Doha</option>
+        <option value="Budapest" label="Budapest">Budapest</option>
+        <option value="Brussels" label="Brussels">Brussels</option>
+        <option value="Prague" label="Prague">Prague</option>
+      </select>
+
+      <select name="hotel_name" id="Hotels" class="classic">
+        <option>Select Hotel</option>
+        <option class="old_options" disabled>Hotel Name</option>
+      </select>
+
+      <input name="room_price" id="room_price" class="Advanced-Booking-Time-Input" type="text" placeholder="Room Price" readonly />
+      <select name="currency" id="currency" class="classic">
+        <option value="GBP">GBP</option>
+        <option value="USD">USD</option>
+        <option value="Euros">Euros</option>
+        <option value="QAR">QAR</option>
+        <option value="AED">AED</option>
+        <option value="PKR">PKR</option>
+        <option value="INR">INR</option>
+        <option value="VND">VND</option>
+        <option value="NPR">NPR</option>
+      </select>
+
+      <div class="inputGroup">
+        <input id="Breakfast" value="15" name="check" type="checkbox"/>
+        <label for="Breakfast">Breakfast (15 GBP per day)</label>
+      </div>
+      
+      <div class="inputGroup">
+        <input id="Wifi" value="5" name="check" type="checkbox"/>
+        <label for="Wifi">Wifi (5 GBP per day)</label>
+      </div>
+
+      <div class="inputGroup">
+        <input id="Gym" value="5" name="check" type="checkbox"/>
+        <label for="Gym">Gym (5 GBP per day)</label>
+      </div>
+
+      <div class="inputGroup">
+        <input id="Swimmingpool" value="5" name="check" type="checkbox"/>
+        <label for="Swimmingpool">Swimming pool (5 GBP)</label>
+      </div>
+
+      <input class="Advanced-Booking-Time-Input" name="advance_booking_time" type="text" placeholder="Adavance booking time(days)"/>
+
+      <div class="Rooms-Capicity-Block">
+          <h3 id="rooms_capicit_text" class="Rooms-Capicity-Text">Rooms Capicity</h3>
+      </div>
+
+      <div class="pay-button">Pay</div>
+
+    <button name="" class="book-button">Book</button>
+    
+    
+</form>
+</div>
+{% endblock %} 

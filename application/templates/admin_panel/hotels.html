@@ -1,0 +1,21 @@
+{% extends "admin_panel/admin_master_layout.html" %}
+
+{% block title %} hotels {% endblock %}
+
+{% block body %}
+<div class="booking-card-background">
+    {% for hotel in all_hotels %}
+    <form class="booking-card" method="post" action="{{url_for('AdminView:delete_hotel', id=hotel.hotel_id)}}">
+        <h2 class="booked-hotel-name">{{hotel.hotel_name}}</h2>
+        <div class="booking-info">
+            <h3 class="bookedby-name">Rooms Capicity: {{hotel.rooms_capicity}}</h3>
+            <h3 class="booking-id">Off Peak Season Rate: {{hotel.off_peak_season_room_price}}</h3>
+            <h3 class="hotel-city-name">Peak Season Rate: {{hotel.peak_season_room_price}}</h3>
+        </div>
+        <div class="booking-info">
+            <button name="" class="cancel-booking-button">Delete</button>
+        </div>
+    </form>
+    {% endfor %}
+    </div>
+{% endblock %} 

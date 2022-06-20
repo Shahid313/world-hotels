@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+.sign-in-background{
+    background-color: #a6b5c2;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #564c46;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+
+.sign-in-form-header{
+    color: #a6b5c2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sign-in-form-inputs{
+    border: 1px solid #a6b5c2;
+    outline-color: #a6b5c2;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 17px;
+    width: 400px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.sign-in-button{
+    border: none;
+    background-color: #a6b5c2;
+    padding: 8px 60px;
+    color: #564c46;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sign-in-button:active{
+    transform: scale(0.2);
+    transition: ease-out;
+    transition-duration: 2s;
+}
+
+.dont-have-an-account-text{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.sign-up-page-link{
+    color: #a6b5c2;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media(max-width:450px){
+    .sign-in-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #564c46;
+        width: fit-content;
+        height: fit-content;
+        padding: 30px;
+    }
+
+    .sign-in-form-header{
+        color: #a6b5c2;
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .sign-in-form-inputs{
+        border: 1px solid #a6b5c2;
+        outline-color: #a6b5c2;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: 13px;
+        width: 200px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .sign-in-button{
+        border: none;
+        background-color: #a6b5c2;
+        padding: 5px 40px;
+        color: #564c46;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;    
+    }
+
+    .dont-have-an-account-text{
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+    }
+}
+

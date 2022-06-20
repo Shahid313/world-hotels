@@ -1,0 +1,14 @@
+First of all unzip the folder.
+Then go to world_hotels directory
+Then install all the modules which are in the requirements.txt file
+Then run FLASK_APP=application.py
+Then run FLASK_DEBUG=1
+Then run python application.py
+
+Note: The dumped database is present in this zip folder by the name world_hotels.sql
+
+The admin email is: admin@gmail.com
+The admin password is: admin1234
+
+One registered user email: shahidkhan@gmail.com
+One registered user password: khan1234

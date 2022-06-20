@@ -1,0 +1,279 @@
+.booking-form-header{
+    color: #a6b5c2;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media(max-width:450px){
+  .booking-form-header{
+    color: #a6b5c2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+}
+}
+
+.booking-background{
+    display: flex;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Receipt-background{
+  background-color: #a6b5c2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-form{
+    display: flex;
+    margin-top: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #564c46;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+
+}
+
+@media (max-width: 450px) {
+  .booking-form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #564c46;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+
+}
+}
+
+@media (max-width: 480px) {
+  .booking-form{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #564c46;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+
+}
+}
+
+.book-button{
+    border: none;
+    background-color: #a6b5c2;
+    padding: 8px 60px;
+    color: #564c46;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* dropdown */
+select {
+
+    /* styling */
+    background-color: white;
+    border: thin solid #a6b5c2;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 280px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    
+  
+    /* reset */
+  
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  @media (max-width: 450px) {
+    /* dropdown */
+select {
+
+  /* styling */
+  background-color: white;
+  border: thin solid #a6b5c2;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 250px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+  }
+
+select.classic {
+    background-image:
+      linear-gradient(45deg, transparent 50%, #a6b5c2 50%),
+      linear-gradient(135deg, #a6b5c2 50%, transparent 50%),
+      linear-gradient(to right, white, white);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+  }
+  
+  select.classic:focus {
+    background-image:
+      linear-gradient(45deg, white 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, white 50%),
+      linear-gradient(to right, #a6b5c2, #a6b5c2);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+    border-color: #a6b5c2;
+    outline: 0;
+  }
+
+  .Rooms-Capicity-Block{
+    background-color: white;
+    border: thin solid #a6b5c2;
+    display: inline-block;
+    font: inherit;
+    width: 280px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 450px) {
+    .Rooms-Capicity-Block{
+      background-color: white;
+      border: thin solid #a6b5c2;
+      display: inline-block;
+      font: inherit;
+      width: 250px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  
+
+  .Rooms-Capicity-Text{
+      color: #564c46;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  .Room_Price_Text{
+    color: #564c46;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  .Advanced-Booking-Time-Input{
+    border: 1px solid #a6b5c2;
+    outline-color: #a6b5c2;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 17px;
+    width: 280px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  @media(max-width:450px){
+    .Advanced-Booking-Time-Input{
+      border: 1px solid #a6b5c2;
+      outline-color: #a6b5c2;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      font-size: 17px;
+      width: 250px;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+
+  .option:hover{
+      background-color: #a6b5c2;
+  }
+
+  .pay-button{
+    border: none;
+    background-color: #a6b5c2;
+    padding: 8px 65px;
+    color: #564c46;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+  }
+
+  @media(max-width:800px){
+    .booking-form{
+      display: flex;
+      margin-top: 100px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #564c46;
+      width: fit-content;
+      height: fit-content;
+      padding: 20px;
+  
+  }
+  }
+
+  @media(max-width:1000px){
+    .booking-form{
+      display: flex;
+      margin-top: 400px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #564c46;
+      width: fit-content;
+      height: fit-content;
+      padding: 20px;
+  
+  }
+  }

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+
+.card{
+    display: flex;
+}
+
+.card-image{
+    width: 500px;
+    height: 200px;
+    padding: 30px;
+    
+}
+
+.card-image2{
+    width: 500px;
+    height: 200px;
+    padding: 30px;
+}
+
+.card-text{
+    width: 600px;
+    height: 200px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.card-text2{
+    width: 600px;
+    height: 200px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    font-size: 22px;
+}
+
+@media (min-width:480px) and (max-width: 620px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-image{
+        width: 300px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+
+    .card-image2{
+        width: 300px;
+        height: 200px;
+
+
+    }
+
+    .card-text{
+        width: 300px;
+        height: 200px;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .card-text2{
+        width: 300px;
+        height: 200px;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .all-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .text{
+        font-size: 16px;
+    }
+}
+
+/* 780px */
+
+@media (min-width:621px) and (max-width: 780px) {
+    .card{
+        display: flex;
+        margin-top: 80px;
+        justify-content: center;
+    }
+
+    .card-image{
+        width: 200px;
+        height: 230px;
+        padding: 20px;
+
+    }
+
+    .card-image2{
+        width: 200px;
+        height: 230px;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .card-text{
+        width: 200px;
+        height: 150px;
+        padding: 20px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-text2{
+        width: 200px;
+        height: 150px;
+        padding: 20px;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text{
+        font-size: 16px;
+    }
+
+    .all-cards{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width:600px;
+    }
+}
+
+@media (min-width:780px) and (max-width:950px){
+    .all-cards{
+        margin-top: 60px;
+    }
+
+    .card{
+        margin-bottom: 20px;
+    }
+}
